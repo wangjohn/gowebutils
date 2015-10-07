@@ -1,4 +1,4 @@
-package main
+package gowebutils
 
 import (
 	"io"
