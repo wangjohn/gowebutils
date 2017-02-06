@@ -11,6 +11,7 @@ import (
 func SendError(w http.ResponseWriter, err error) {
 	e := jsonapi.Error{
 		Status: "400",
+		Code:   "error",
 		Detail: err.Error(),
 	}
 	errorList := []jsonapi.Error{e}
